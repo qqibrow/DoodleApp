@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".doodlepro">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/open"
+            android:src="@drawable/open"
+            android:onClick="onClickOpen"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/draw"
+            android:src="@drawable/draw"
+            android:onClick="onClickDraw"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/erase"
+            android:onClick="onClickErase"
+            android:src="@drawable/erase"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:onClick="onClickClose"
+            android:src="@drawable/save"/>
+    </LinearLayout>
+    <view
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        class="com.doodlepro.lniu.doodlepro.DoodleView"
+        android:id="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_below="@id/view"
+        android:id="@+id/panel"
+        android:padding="10px"
+        android:gravity="center"
+        >
+
+        <view
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            class="com.doodlepro.lniu.doodlepro.ColorView"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10px"
+            android:layout_alignParentStart="true"
+            android:background="@color/red"/>
+
+        <view
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            class="com.doodlepro.lniu.doodlepro.ColorView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10px"
+            android:background="@color/orange"/>
+
+        <view
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            class="com.doodlepro.lniu.doodlepro.ColorView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10px"
+            android:background="@color/yellow"/>
+
+        <view
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            class="com.doodlepro.lniu.doodlepro.ColorView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10px"
+            android:background="@color/green"/>
+
+        <view
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            class="com.doodlepro.lniu.doodlepro.ColorView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10px"
+            android:background="@color/aqua"/>
+
+        <view
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            class="com.doodlepro.lniu.doodlepro.ColorView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10px"
+            android:background="@color/blue"/>
+        </LinearLayout>
+
+
+</LinearLayout>
