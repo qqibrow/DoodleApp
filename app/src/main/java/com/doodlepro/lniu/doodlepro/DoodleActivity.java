@@ -49,4 +49,12 @@ public class DoodleActivity extends Activity implements ColorView.OnItemSelected
         bundle.putInt("Size", 20);
         dooleView.ChangePaint(bundle);
     }
+
+    public void onClickSave(View view) {
+
+    }
+
+    public void onClickOpen(View view) {
+
+    }
 }

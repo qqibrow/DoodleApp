@@ -37,6 +37,13 @@ public class DoodleView extends View {
         p.setStyle(Paint.Style.STROKE);
     }
 
+    public void DrawTo(Canvas canvas) {
+        for(Pair<Path, Paint> pair : oldPaths) {
+            canvas.drawPath(pair.first, pair.second);
+        }
+        canvas.drawPath(path, p);
+    }
+
     public void ChangePaint(Bundle bundle) {
         int color = bundle.getInt("Color");
         int size = bundle.getInt("Size");
